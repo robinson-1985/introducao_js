@@ -38,11 +38,232 @@ de programação.
 
 Sobre os Nomes das Variáveis:
 
-Case-Sensitive: O JS diferencia entre letras maiusculas e minuscula. NOME é diferente 
+- Case-Sensitive: O JS diferencia entre letras maiusculas e minuscula. NOME é diferente 
 de nome.
 
 let nome = "Robinson";
 let NOME = "Dias";
+
+Caracteres válidos:
+
+- Letras: Você pode usar letras maiúsculas e minúsculas, mas evite cedilha e acentuação.
+
+let NomeComprador = "João Silva";
+
+- Números: Desde que a variável comece com 1 letra, você pode usar números na definição.
+
+let carro2000 = 123;
+let w3c = "https: //www.w3.org/";
+
+- Underline "_" e cifrão "$": São permitidos em qualquer posição e são mais usados nas
+variáveis de biblioteca e frameworks. Porém, é aconselhável não começar por eles. Não 
+que seja proibido!
+
+let _variavel = "99";
+let $www = "true";
+
+TIPOS DE DADOS
+
+Apesar das variáveis das linguagens dinâmicas não precisarem ter seus tipos de dados
+identificados, isso não quer dizer que eles não existam.
+O JS possui os seguintes tipos de dados:
+
+- Number
+- String
+- Boolean
+- Array
+- Null e Undefined
+- Synbol
+- Object
+- Function
+
+Importância dos tipos de dados: 
+
+Saber este tipo de informação é muito importante, pois ajuda a identificar erros.
+Veremos que as estruturas que recebem parâmetros e se irformarmos o tipo errado, 
+o programa poderá não funcionar como deveria. 
+
+NUMBER
+
+São todos os números reais que aprendemos nas aulas de matemática.
+
+let numeroInteiro = 100;
+let numeroDecimal = 5.38;
+let numeroNegativo = -200.99;
+
+OPERADORES
+
+Você pode usar +, -, *, e / para executar as operações básicas com números.
+
+let numero = 5;
+let numero2 = 7;
+let resulltado = numero + numero2;
+
+let numero = 5;
+let resulltado = numero * 0.5;
+
+let numero = 5;
+// Cuidado: Divisão por 0 causará erro
+let resultado = numero / 0;
+
+IMPORTANTE: 
+
+Estes valores numéricos não são infinitos. Mesmo assim, o JS trabalha com ponto 
+flutuante de dupla precisão (double) que permite valores muito altos.
+
+Máximo e mínimo: 
+
+Para saber quais são estes valores máximos e mínimos, você pode efetuar os seguintes
+comandos no console.
+
+console.log(Number.Max_Value);
+console.log(Number.MIN_Value);
+
+STRINGS: 
+
+São valores de texto, normalmente chamados de "cadeias de caracteres":
+
+let olaMundo = "Olá Mundo";
+
+Você pode utilizar aspas simples ou duplas para encapsular a String.
+
+let olaMundo = "Olá Mundo";
+let olaMundo2 = 'Olá Mundo';
+
+Caracteres Especiais - Para adicionar caracteres especiais utilizamos a barra 
+invertida.
+
+let caracteresEspeciais = "Lorem \n Ipsum \\ dolor \' \" amet";
+
+Concatenação de strings: Você pode unir (concatenar) strings de diversas formas.
+
+1) Utilizando o sinal de +
+
+let ola = "Olá";
+let mundo = "Mundo";
+
+let olaMundo = ola+mundo;
+
+2) Utilizando o string.concat
+
+let ola = "Olá";
+let mundo = "Mundo";
+
+let olaMundo = ola.concat(mundo);
+
+Este método também permite concatenar diversas strings. 
+
+let ola = "Olá";
+let mundo = "Mundo";
+
+let olaMundo = ola.concat(mundo, "frase", ola);
+
+3) Template de strings: O template de strings é uma nova forma de concatenação 
+e utiliza o ${expressão} e a crase ao redor da string.
+
+let ola = "Olá";
+let mundo = "Mundo";
+
+let olaMundo = `${ola} ${mundo} ${1+1}`;
+
+BOOLEANOS: 
+
+São tipos de dados que possuem apenas dois valores:
+True - Verdadeiro
+False - Falso
+
+let verdadeiro = true;
+
+let falso = false;
+
+Observações: Os valores true e false NÃO são escritos entre aspas.
+Cuidado! O JS entende certos valores dos outros tipos de dados como true ou false.
+
+Comparações: Uma das formas mais comuns de se obter valores booleanos é através 
+de comparações.
+
+// true 
+let comparacao = 1 == 1;
+
+// false 
+let comparacao = 1 > 5;
+
+// true 
+let comparacaoString = "banana" == "banana";
+
+Atenção: Se você testar 1 == "1", obterá true. Para fazer comparações que levam em
+consideração o valor e o tipo do dado, utilize ===
+
+// True
+console.log(1 == "1");
+
+// False
+console.log(1 == "1");
+
+ARRAY (vetor): É uma lista ou coleção de dados que pode ser acessada por índice.
+Para criar um vetor vazio basta criar uma variável e atribuir [] a ela.
+
+let vetor = [];
+
+Atribuindo valores: Você pode criar um vetor com seus valores separados por vírgula.
+
+let vetor = [1, 22, 0, 100];
+
+Podemos adicionar valores de qualquer tipo no vetor.
+
+let vetor = [1, "Olá Mundo", true, [1,2,3]];
+
+Acessando valores: Os valores podem ser acessados através de seu índice.
+
+let vetor = [1, 22, 0, 100];
+
+//exibirá 22
+console.log(vetor[1]);
+
+Observe que o índice começa no 0. Então, o primeiro item está na posição 0,
+o segundo na posição 1 e assim por diante.
+
+Alterando e atribuindo valores pelo índice: Com o índice, você pode:
+a) Alterar um valor existente.
+b)Inserir um novo valor em uma posição específica.
+
+let vetor = [11, 21, 23, 433, 50];
+
+// Altera o valor da primeira posição
+vetor [0] = 9000;
+// Insere um novo valor após o último elemento
+vetor [5] = 7;
+
+Null: O null é um tipo de dado especial, ele representa a falta de valor de qualquer
+outro tipo de dado.
+
+let x = null;
+
+let y = null;
+y = null;
+
+Undefined: Este tipo de dado aparece quando criamos uma variável e tentamos acessar 
+seu valor antes de ter atribuído algo a ela.
+
+let x;
+
+console.log(x);
+
+Undefined !== Null: undefined e null são diferentes.
+
+console.log(null === undefined);
+
+Resumidamente, isso ocorre pois null ainda é um valor e undefined é quando o JS não
+sabe qual o tipo de dado. 
+
+Objeto: É 
+
+
+
+
+
+
+
 
 
 
