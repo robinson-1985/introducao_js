@@ -1,7 +1,48 @@
 Extremamente popular
+
 Script/Interpretado
+
 Linguagem dinâmica (conhecida como fracamente tipada)
+
 Utilizada em websites e apps híbridos
+
 Utilizada no backend com o NodeJS (É possível utilizar montar uma programação web 
 inteira utilizando somente JS como linguagem de programação)
+
 Para facilitar no html, sempre escolher o html: 5.
+
+No lugar de console.log pode ser utilizado o alert, porém, ele pode atrapalhar a 
+visualização das pessoas que estão iniciando e dificultar o entendimento.
+
+Os comentários são feitos utilizando as barras duplas // para comentário de linha, e
+de várias linhas é utilizado /* */.
+
+No JS, podemos declarar uma variável de três formas:
+- var: Declara uma variável podendo atribuir um valor junto na sua criação.
+
+Exemplo: var umNumero; ou var umNumero = 10;
+
+- let: Declara uma variável com escopo de bloco: 
+
+Exemplo: let outroNumero = 10; ou let outroNumero;
+
+- const: Declara uma variável apenas de leitura. Após atribuir um valor a uma const,
+não será possível alterá-lo:
+
+Exemplo: const ola = "Olá Mundo";
+
+IMPOTANTE!!!!!!!
+
+Apesar de ainda ser muito utilizado, o var não é mais recomendado pelas boas práticas 
+de programação.
+
+Sobre os Nomes das Variáveis:
+
+Case-Sensitive: O JS diferencia entre letras maiusculas e minuscula. NOME é diferente 
+de nome.
+
+let nome = "Robinson";
+let NOME = "Dias";
+
+
+
