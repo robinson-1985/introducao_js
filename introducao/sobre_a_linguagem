@@ -256,7 +256,46 @@ console.log(null === undefined);
 Resumidamente, isso ocorre pois null ainda é um valor e undefined é quando o JS não
 sabe qual o tipo de dado. 
 
-Objeto: É 
+Objeto: É um tipo de dado composto pelos outros tipos. Com ele, podemos organizar
+informações relacionadas em uma variável. 
+
+let carro = {
+    rodas: 4,
+    portas: 2;
+    nome: "um carro",
+    aVenda: true
+};
+
+Criação do objeto: Um objeto vazio é bem simples de criar.
+
+let carro = {};
+
+No caso de um objeto com propriedades (variáveis), fazemos assim:
+
+let carro = {
+    rodas: 4,
+    nome: "Carro"
+};
+
+Caso você já tenha criado o objeto e queira adicionar um novo, você pode fazer de 
+duas formas: 
+
+carro.portas = 2;
+carro["portas"] = 2;
+
+Note que se você usar a segunda opção, precisa ter uma string dentro dos [].
+
+A alteração de dados funciona da mesma forma.
+
+carro.rodas = 5;
+carro.portas = 4;
+carro.nome = "Carrão";
+
+carro["rodas"] = 3;
+carro["portas] = 2;
+carro["nome"] = "Carrinho";
+
+
 
 
 
