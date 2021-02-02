@@ -295,6 +295,84 @@ carro["rodas"] = 3;
 carro["portas] = 2;
 carro["nome"] = "Carrinho";
 
+Funções: As funções são utilizadas para criarmos uma sequência de operações para serem
+executadas.
+
+let olaMundo = function(){
+    console.log("Olá Mundo");
+    console.log("Olá Mundo novamente");
+    console.log("Olá Mundo mais uma vez");
+}
+
+olaMundo();
+
+Note que para fazer a função executar, você precisa chama-la com os parênteses.
+
+Outra forma de criar uma função é chamando o function com o nome dela.
+
+function olaMundo(){
+    console.log("Olá Mundo");
+    console.log("Olá Mundo novamente");
+    console.log("Olá Mundo mais uma vez");
+}
+
+olaMundo();
+
+Também é possível passar valores para a função acessar.
+
+let somar = function(valor1, valor2){
+    let resultado = valor1 + valor2;
+    console.log(resultado);
+}
+
+somar(1,2);
+somar(4,4);
+somar(99,1);
+
+O último recurso que estamos vendo da função (por enquanto) é o comando return.
+
+let somar = function(valor1, valor2){
+    let resultado = valor1 + valor2;
+    return resultado;
+}
+
+A primeira coisa que você precisa saber, que o return PARA a função e devolve um valor.
+
+Então, estes estão corretos:
+
+let somar = function(valor1, valor2){
+    let resultado = valor1 + valor2;
+    return resultado;
+}
+
+let subtrair = function(valor1, valor2){
+    console.log(valor1 - valor2);
+    return valor1 - valor2;
+}
+
+E estes não executarão corretamente:
+
+let somar = function(valor1, valor2){
+    return valor1 + valor2;
+    console.log(1);
+}
+
+let subtrair = function(valor1, valor2){
+    valor2 = valor2 + 5;
+    return valor1 - valor2;
+    valor1 = 1;
+}
+
+Vamos falar sobre a utilidade do RETURN:
+
+let somar = function(valor1, valor2){
+    return valor1 + valor2;
+}
+
+let resultado = somar(10,10);
+
+Uma função com return devolve um valor que podemos guardar em uma variável.
+
 
 
 
