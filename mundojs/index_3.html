@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projeto</title>
+</head>
+<body>
+    <script>
+        let objeto = {
+            objeto2: {
+                vetor: [1,2, {valor: 55}]
+            }
+        };
+        
+        // Qual opção exibirá o valor 55?
+
+        console.log(objeto["objeto2"].vetor.valor);
+
+        console.log(objeto.objeto2.vetor.valor);
+
+        console.log(objeto["objeto2"]["vetor"][2].valor); // Esse daqui é o correto!
+
+        console.log(objeto.objeto2.vetor[3].valor);
+        
+    </script>
+</body>
+</html>

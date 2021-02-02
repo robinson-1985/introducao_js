@@ -373,6 +373,11 @@ let resultado = somar(10,10);
 
 Uma função com return devolve um valor que podemos guardar em uma variável.
 
+O return faz com que a função seja apeas uma ferramenta excelente para tornarmos 
+nosso código mais simples de entender. 
+
+Curiosidade: Caso você não coloque o return, por default as funções devolvem undefined.
+
 
 
 
